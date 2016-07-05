@@ -1,0 +1,34 @@
+{
+  "name": "bpmn-js-transaction-boundaries",
+  "version": "0.0.0",
+  "description": "A bpmn-js extension to visualize transaction boundaries",
+  "scripts": {
+    "all": "grunt",
+    "dev": "grunt auto-test",
+    "test": "grunt test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pedesen/bpmn-js-transaction-boundaries"
+  },
+  "keywords": [
+    "bpmn",
+    "bpmn-js",
+    "transactions",
+    "async"
+  ],
+  "author": {
+    "name": "Patrick Dehn",
+    "url": "https://github.com/pedesen"
+  },
+  "contributors": [
+    {
+      "name": "bpmn.io contributors",
+      "url": "https://github.com/bpmn-io"
+    }
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "lodash": "^3.10.1"
+  }
+}
