@@ -1,6 +1,6 @@
 {
   "name": "bpmn-js-transaction-boundaries",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "A bpmn-js extension to visualize transaction boundaries",
   "scripts": {
     "all": "grunt",
