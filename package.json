@@ -30,5 +30,10 @@
   "license": "MIT",
   "dependencies": {
     "lodash": "^3.10.1"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.4",
+    "grunt-release": "^0.13.0",
+    "load-grunt-tasks": "^0.3.0"
   }
 }
