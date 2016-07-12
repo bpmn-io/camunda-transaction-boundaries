@@ -1,6 +1,6 @@
 {
   "name": "bpmn-js-transaction-boundaries",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A bpmn-js extension to visualize transaction boundaries",
   "scripts": {
     "test": "karma start test/config/karma.unit.js",
