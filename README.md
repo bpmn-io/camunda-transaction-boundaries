@@ -55,3 +55,11 @@ bpmnModeler.importXML(xml, function(err) {
 ```
 
 Please see [this example](https://github.com/bpmn-io/bpmn-js-examples/tree/master/transaction-boundaries) for a more detailed instruction.
+
+
+## Test
+
+```
+npm install
+npm test
+```
