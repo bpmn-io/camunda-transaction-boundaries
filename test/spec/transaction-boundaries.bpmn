@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:camunda="http://camunda.org/schema/1.0/bpmn" id="Definitions_1" targetNamespace="http://bpmn.io/schema/bpmn" exporter="Camunda Modeler" exporterVersion="1.2.0-nightly">
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:camunda="http://camunda.org/schema/1.0/bpmn" id="Definitions_1" targetNamespace="http://bpmn.io/schema/bpmn" exporter="Camunda Modeler" exporterVersion="1.10.0">
   <bpmn:process id="Process_1" isExecutable="false">
-    <bpmn:startEvent id="StartEvent_1">
+    <bpmn:startEvent id="StartEvent_1" camunda:asyncBefore="true">
       <bpmn:outgoing>SequenceFlow_05gusvb</bpmn:outgoing>
     </bpmn:startEvent>
     <bpmn:sequenceFlow id="SequenceFlow_05gusvb" sourceRef="StartEvent_1" targetRef="Task_1" />
@@ -55,6 +55,9 @@
     </bpmn:receiveTask>
     <bpmn:sequenceFlow id="SequenceFlow_18zs7rh" sourceRef="Gateway_2" targetRef="Task_3" />
     <bpmn:sequenceFlow id="SequenceFlow_1i5flj1" sourceRef="Task_3" targetRef="EndEvent_1" />
+    <bpmn:textAnnotation id="TextAnnotation_1ko82xk">    <bpmn:text></bpmn:text>
+</bpmn:textAnnotation>
+    <bpmn:association id="Association_1esm1jn" sourceRef="Task_4" targetRef="TextAnnotation_1ko82xk" />
   </bpmn:process>
   <bpmndi:BPMNDiagram id="BPMNDiagram_1">
     <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="Process_1">
@@ -182,6 +185,13 @@
         <bpmndi:BPMNLabel>
           <dc:Bounds x="795" y="50" width="90" height="20" />
         </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="TextAnnotation_1ko82xk_di" bpmnElement="TextAnnotation_1ko82xk">
+        <dc:Bounds x="434" y="464" width="100" height="30" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="Association_1esm1jn_di" bpmnElement="Association_1esm1jn">
+        <di:waypoint xsi:type="dc:Point" x="421" y="398" />
+        <di:waypoint xsi:type="dc:Point" x="472" y="464" />
       </bpmndi:BPMNEdge>
     </bpmndi:BPMNPlane>
   </bpmndi:BPMNDiagram>

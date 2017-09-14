@@ -1,6 +1,6 @@
 {
   "name": "bpmn-js-transaction-boundaries",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A bpmn-js extension to visualize transaction boundaries",
   "scripts": {
     "test": "karma start test/config/karma.unit.js",
@@ -28,12 +28,12 @@
   ],
   "license": "MIT",
   "devDependencies": {
-    "bpmn-js": "^0.15.0",
+    "bpmn-js": "^0.22.1",
     "brfs": "^1.4.1",
     "browserify": "^13.0.0",
-    "camunda-bpmn-moddle": "^0.7.0",
+    "camunda-bpmn-moddle": "^0.13.0",
     "chai": "^3.2.0",
-    "diagram-js": "^0.15.0",
+    "diagram-js": "^0.21.1",
     "grunt": "^0.4.4",
     "grunt-release": "^0.13.0",
     "karma": "^0.13.9",
