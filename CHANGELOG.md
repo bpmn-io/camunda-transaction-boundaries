@@ -6,6 +6,10 @@ All notable changes to [camunda-transaction-boundaries](https://github.com/bpmn-
 
 ___Note:__ Yet to be released changes appear here._
 
+## 1.0.1
+
+* `DOCS`: fix usage section
+
 ## 1.0.0
 
 * `FEAT`: add before start and after end boundaries ([`a7f5426a`](https://github.com/bpmn-io/bpmn-js-transaction-boundaries/pull/4/commits/a7f5426a24e4dd7be9614537841083e9ad0abca8))
