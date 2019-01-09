@@ -36,6 +36,7 @@ describe('transaction-boundaries', function() {
   function inject(fn) {
 
     var config = {
+      container: 'body',
       additionalModules: [ transactionBoundariesModule ],
       moddleExtensions: {
         camunda: camundaModdleDescriptor
