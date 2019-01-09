@@ -1,6 +1,6 @@
 {
   "name": "camunda-transaction-boundaries",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Visualize Camunda transaction boundaries within a bpmn-js rendered diagram",
   "scripts": {
     "all": "run-s lint test",
