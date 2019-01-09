@@ -16,6 +16,12 @@ ___Note:__ Yet to be released changes appear here._
 * `CHORE`: expose ES modules
 * `FIX`: show boundary marker on sequence flows only ([`2886ec8f`](https://github.com/bpmn-io/bpmn-js-transaction-boundaries/pull/4/commits/2886ec8f5cad78ee246643eca27693578205cca1))
 
+### Breaking Changes
+
+* requires `bpmn-js@3`
+* exposes ES modules and requires an appropriate bundler to consume
+* renamed to `camunda-transaction-boundaries`
+
 ## ...
 
 Check `git log` for earlier history.
