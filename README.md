@@ -1,9 +1,9 @@
 > As of version `1.0.0` this library exposes [ES modules](http://exploringjs.com/es6/ch_modules.html#sec_basics-of-es6-modules). Use an ES module aware bundler such as [Webpack](https://webpack.js.org) or [Rollup](https://rollupjs.org) to bundle it for the browser.
 
 
-# bpmn-js-transaction-boundaries
+# camunda-transaction-boundaries
 
-[![Build Status](https://travis-ci.com/bpmn-io/bpmn-js-transaction-boundaries.svg?branch=master)](https://travis-ci.com/bpmn-io/bpmn-js-transaction-boundaries)
+[![Build Status](https://travis-ci.com/bpmn-io/camunda-transaction-boundaries.svg?branch=master)](https://travis-ci.com/bpmn-io/camunda-transaction-boundaries)
 
 A bpmn-js extension to visualize transaction boundaries, applied by [Camunda](https://docs.camunda.org).
 
@@ -33,7 +33,7 @@ Extend the [bpmn-js](https://github.com/bpmm-io/bpmn-js) modeler with the transa
 ```javascript
 import BpmnModeler from 'bpmn-js/lib/Modeler';
 
-var transactionBoundariesModule from 'bpmn-js-transaction-boundaries';
+var transactionBoundariesModule from 'camunda-transaction-boundaries';
 
 var canvas = $('#js-canvas');
 
