@@ -1,7 +1,7 @@
 {
-  "name": "bpmn-js-transaction-boundaries",
+  "name": "camunda-transaction-boundaries",
   "version": "0.1.1",
-  "description": "A bpmn-js extension to visualize transaction boundaries",
+  "description": "Visualize Camunda transaction boundaries within a bpmn-js rendered diagram",
   "scripts": {
     "all": "run-s lint test",
     "lint": "eslint .",
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/bpmn-io/bpmn-js-transaction-boundaries"
+    "url": "https://github.com/bpmn-io/camunda-transaction-boundaries"
   },
   "keywords": [
     "bpmn",
