@@ -33,7 +33,7 @@ Extend the [bpmn-js](https://github.com/bpmm-io/bpmn-js) modeler with the transa
 ```javascript
 import BpmnModeler from 'bpmn-js/lib/Modeler';
 
-var transactionBoundariesModule from 'camunda-transaction-boundaries';
+import transactionBoundariesModule from 'camunda-transaction-boundaries';
 
 var canvas = $('#js-canvas');
 
