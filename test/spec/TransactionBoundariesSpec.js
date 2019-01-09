@@ -4,7 +4,7 @@ import Modeler from 'bpmn-js/lib/Modeler';
 
 import transactionBoundariesModule from '../..';
 
-import forEach from 'lodash/collection/forEach';
+import { forEach } from 'min-dash';
 
 import camundaModdleDescriptor from 'camunda-bpmn-moddle/resources/camunda';
 

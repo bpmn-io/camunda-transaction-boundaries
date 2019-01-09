@@ -48,6 +48,6 @@
     "webpack": "^4.28.1"
   },
   "dependencies": {
-    "lodash": "^3.10.1"
+    "min-dash": "^3.3.0"
   }
 }
