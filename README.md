@@ -1,3 +1,6 @@
+> As of version `1.0.0` this library exposes [ES modules](http://exploringjs.com/es6/ch_modules.html#sec_basics-of-es6-modules). Use an ES module aware bundler such as [Webpack](https://webpack.js.org) or [Rollup](https://rollupjs.org) to bundle it for the browser.
+
+
 # bpmn-js-transaction-boundaries
 
 [![Build Status](https://travis-ci.com/bpmn-io/bpmn-js-transaction-boundaries.svg?branch=master)](https://travis-ci.com/bpmn-io/bpmn-js-transaction-boundaries)
