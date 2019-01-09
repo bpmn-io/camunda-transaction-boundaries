@@ -8,6 +8,8 @@ ___Note:__ Yet to be released changes appear here._
 
 ## 1.0.0
 
+* `FEAT`: add before start and after end boundaries ([`c62112db`](https://github.com/bpmn-io/bpmn-js-transaction-boundaries/pull/4/commits/c62112db666b84ca22b0b8e4341c117063a83c35))
+* `FEAT`: add conditional event boundaries ([`bdc301ef`](https://github.com/bpmn-io/bpmn-js-transaction-boundaries/pull/4/commits/bdc301efc935b355cee96cd0642f83c708411277))
 * `CHORE`: replace `lodash` with `min-dash`
 * `CHORE`: migrate to `bpmn-js@3`
 * `CHORE`: expose ES modules
