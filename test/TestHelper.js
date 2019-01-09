@@ -1,9 +1,7 @@
 'use strict';
 
-var fs = require('fs');
-
-var diagramCSS = fs.readFileSync('node_modules/diagram-js/assets/diagram-js.css');
-var bpmnCSS = fs.readFileSync('node_modules/bpmn-js/assets/bpmn-font/css/bpmn-embedded.css');
+var diagramCSS = require('diagram-js/assets/diagram-js.css');
+var bpmnCSS = require('bpmn-js/assets/bpmn-font/css/bpmn-embedded.css');
 
 
 function addStyle(styleText) {

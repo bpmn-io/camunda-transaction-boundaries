@@ -1,7 +1,5 @@
 require('../TestHelper');
 
-var fs = require('fs');
-
 var Modeler = require('bpmn-js/lib/Modeler');
 
 var transactionBoundariesModule = require('../../lib');
@@ -13,7 +11,7 @@ var camundaModdleDescriptor = require('camunda-bpmn-moddle/resources/camunda');
 
 describe('transaction-boundaries', function() {
 
-  var diagram = fs.readFileSync(__dirname + '/transaction-boundaries.bpmn', 'utf-8');
+  var diagram = require('./transaction-boundaries.bpmn');
 
   function withModeler(config, fn) {
 
