@@ -5,7 +5,7 @@
 
 [![Build Status](https://travis-ci.com/bpmn-io/bpmn-js-transaction-boundaries.svg?branch=master)](https://travis-ci.com/bpmn-io/bpmn-js-transaction-boundaries)
 
-A bpmn-js extension to visualize transaction boundaries
+A bpmn-js extension to visualize transaction boundaries, applied by [Camunda](https://docs.camunda.org).
 
 ![transaction boundaries screenshot](docs/screenshot.png "Screenshot of Transaction Boundaries")
 
@@ -13,7 +13,6 @@ A bpmn-js extension to visualize transaction boundaries
 ## Features
 
 Visualize all transaction boundaries in a BPMN diagram.
-
 
 This includes all BPMN elements that are wait states and have a boundary for incoming connections:
 
@@ -24,9 +23,7 @@ This includes all BPMN elements that are wait states and have a boundary for inc
 * User Task
 * Event Based Gateway
 
-Furthermore all activities which have asynchronous continuations act as transaction boundaries. This is also valid for multi-instance activities.
-
-Learn more about [transactions and wait states](https://docs.camunda.org/manual/latest/user-guide/process-engine/transactions-in-processes/).
+In addition to these elements all activities with asynchronous continuations act as transaction boundaries. This is also valid for multi-instance activities. Learn more about transactions and wait states in the [Camunda documentation](https://docs.camunda.org/manual/latest/user-guide/process-engine/transactions-in-processes/).
 
 
 ## Usage
