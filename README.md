@@ -9,6 +9,7 @@ A bpmn-js extension to visualize transaction boundaries
 
 ![transaction boundaries screenshot](docs/screenshot.png "Screenshot of Transaction Boundaries")
 
+
 ## Features
 
 Visualize all transaction boundaries in a BPMN diagram.
@@ -33,10 +34,9 @@ Learn more about [transactions and wait states](https://docs.camunda.org/manual/
 Extend the [bpmn-js](https://github.com/bpmm-io/bpmn-js) modeler with the transaction boundaries module:
 
 ```javascript
+import BpmnModeler from 'bpmn-js/lib/Modeler';
 
-var BpmnModeler = require('bpmn-js/lib/Modeler');
-
-var transactionBoundariesModule = require('bpmn-js-transaction-boundaries');
+var transactionBoundariesModule from 'bpmn-js-transaction-boundaries';
 
 var canvas = $('#js-canvas');
 
@@ -50,17 +50,16 @@ var bpmnModeler = new BpmnModeler({
 bpmnModeler.importXML(xml, function(err) {
 
   if (err) {
-      console.error(err);
-    } else {
-      var transactionBoundaries = bpmnModeler.get('transactionBoundaries');
+    return console.error(err);
+  }
 
-      transactionBoundaries.show();
-    }
-  });
+  var transactionBoundaries = bpmnModeler.get('transactionBoundaries');
 
+  transactionBoundaries.show();
+});
 ```
 
-Please see [this example](https://github.com/bpmn-io/bpmn-js-examples/tree/master/transaction-boundaries) for a more detailed instruction.
+Please see [this example](https://github.com/bpmn-io/bpmn-js-examples/tree/master/transaction-boundaries) for a more detailed instructions.
 
 
 ## Test
@@ -69,3 +68,8 @@ Please see [this example](https://github.com/bpmn-io/bpmn-js-examples/tree/maste
 npm install
 npm test
 ```
+
+
+## License
+
+MIT
