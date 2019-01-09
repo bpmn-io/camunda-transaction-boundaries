@@ -1,10 +1,8 @@
-'use strict';
-
-var diagramCSS = require('diagram-js/assets/diagram-js.css');
-var bpmnCSS = require('bpmn-js/assets/bpmn-font/css/bpmn-embedded.css');
+var diagramCSS = require('bpmn-js/dist/assets/diagram-js.css');
+var bpmnCSS = require('bpmn-js/dist/assets/bpmn-font/css/bpmn-embedded.css');
 
 
-function addStyle(styleText) {
+export function addStyle(styleText) {
 
   var head = document.head;
 
@@ -14,8 +12,6 @@ function addStyle(styleText) {
 
   head.appendChild(styleElement);
 }
-
-module.exports.addStyle = addStyle;
 
 
 // add initial style

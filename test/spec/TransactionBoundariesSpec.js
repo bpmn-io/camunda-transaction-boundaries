@@ -1,12 +1,12 @@
-require('../TestHelper');
+import '../TestHelper';
 
-var Modeler = require('bpmn-js/lib/Modeler');
+import Modeler from 'bpmn-js/lib/Modeler';
 
-var transactionBoundariesModule = require('../../lib');
+import transactionBoundariesModule from '../..';
 
-var forEach = require('lodash/collection/forEach');
+import forEach from 'lodash/collection/forEach';
 
-var camundaModdleDescriptor = require('camunda-bpmn-moddle/resources/camunda');
+import camundaModdleDescriptor from 'camunda-bpmn-moddle/resources/camunda';
 
 
 describe('transaction-boundaries', function() {
