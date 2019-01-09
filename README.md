@@ -1,4 +1,7 @@
 # bpmn-js-transaction-boundaries
+
+[![Build Status](https://travis-ci.com/bpmn-io/bpmn-js-transaction-boundaries.svg?branch=master)](https://travis-ci.com/bpmn-io/bpmn-js-transaction-boundaries)
+
 A bpmn-js extension to visualize transaction boundaries
 
 ![transaction boundaries screenshot](docs/screenshot.png "Screenshot of Transaction Boundaries")
