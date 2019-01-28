@@ -24,6 +24,7 @@ This includes all BPMN elements that are wait states and have a boundary for inc
 * Receive Task
 * User Task
 * Event Based Gateway
+* External Service Task
 
 In addition to these elements all activities with asynchronous continuations act as transaction boundaries. This is also valid for multi-instance activities. Learn more about transactions and wait states in the [Camunda documentation](https://docs.camunda.org/manual/latest/user-guide/process-engine/transactions-in-processes/).
 
