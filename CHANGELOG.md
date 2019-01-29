@@ -6,6 +6,10 @@ All notable changes to [camunda-transaction-boundaries](https://github.com/bpmn-
 
 ___Note:__ Yet to be released changes appear here._
 
+## 1.1.0
+
+* `FEAT`: add external service tasks ([`0362f734`](https://github.com/bpmn-io/bpmn-js-transaction-boundaries/pull/4/commits/0362f734364c7a9be909d6d98debf08c04ebcfe9))
+
 ## 1.0.1
 
 * `DOCS`: fix usage section
