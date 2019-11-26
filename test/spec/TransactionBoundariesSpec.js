@@ -118,7 +118,7 @@ describe('transaction-boundaries', function() {
       var expectedBoundaries = {
         'Task_1': { before: true, after: false },
         'Task_2': { before: true, after: false },
-        'Gateway_2': { before: true, after: false },
+        'Gateway_2': { before: false, after: false },
         'MessageCatchEvent': { before: true, after: false },
         'Task_3': { before: true, after: false },
         'Task_4': { before: false, after: true },
