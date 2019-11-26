@@ -6,6 +6,10 @@ All notable changes to [camunda-transaction-boundaries](https://github.com/bpmn-
 
 ___Note:__ Yet to be released changes appear here._
 
+## 1.1.1
+
+* `FIX`: remove transaction boundaries from event based gateways ([`11e41795`](https://github.com/bpmn-io/camunda-transaction-boundaries/commit/11e4179522c83de465d35b6a6e401c0ecaced2b9))
+
 ## 1.1.0
 
 * `FEAT`: add external service tasks ([`0362f734`](https://github.com/bpmn-io/bpmn-js-transaction-boundaries/pull/4/commits/0362f734364c7a9be909d6d98debf08c04ebcfe9))
