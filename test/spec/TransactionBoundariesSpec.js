@@ -64,7 +64,7 @@ describe('transaction-boundaries', function() {
       transactionBoundaries.show();
 
       // then
-      expect(overlays.get({ type: 'transaction-boundaries' })).to.have.length(9);
+      expect(overlays.get({ type: 'transaction-boundaries' })).to.have.length(8);
 
     }));
 
@@ -75,7 +75,7 @@ describe('transaction-boundaries', function() {
       transactionBoundaries.toggle();
 
       // then
-      expect(overlays.get({ type: 'transaction-boundaries' })).to.have.length(9);
+      expect(overlays.get({ type: 'transaction-boundaries' })).to.have.length(8);
 
     }));
 
@@ -118,7 +118,7 @@ describe('transaction-boundaries', function() {
       var expectedBoundaries = {
         'Task_1': { before: true, after: false },
         'Task_2': { before: true, after: false },
-        'Gateway_2': { before: true, after: false },
+        'Gateway_2': { before: false, after: false },
         'MessageCatchEvent': { before: true, after: false },
         'Task_3': { before: true, after: false },
         'Task_4': { before: false, after: true },
@@ -131,7 +131,7 @@ describe('transaction-boundaries', function() {
       var transactionBoundaryElements = transactionBoundaries._getTransactionBoundaryElements();
 
       // then
-      expect(transactionBoundaryElements).to.have.length(9);
+      expect(transactionBoundaryElements).to.have.length(8);
 
       forEach(transactionBoundaryElements, function(element) {
 
