@@ -8,25 +8,20 @@ import { forEach } from 'min-dash';
 
 import camundaModdleDescriptor from 'camunda-bpmn-moddle/resources/camunda';
 
+import diagramXML from './external-service-task.bpmn';
+
 
 describe('transaction-boundaries-external-service-task', function() {
 
-  var diagram = require('./external-service-task.bpmn');
 
   function withModeler(config, fn) {
 
-    return function(done) {
+    return function() {
 
       var modeler = new Modeler(config);
 
-      modeler.importXML(diagram, function(err) {
-        if (err) {
-          done(err);
-        }
-
+      return modeler.importXML(diagramXML).then(function() {
         modeler.invoke(fn);
-
-        done();
       });
 
     };
