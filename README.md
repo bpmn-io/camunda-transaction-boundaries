@@ -5,7 +5,8 @@
 
 # camunda-transaction-boundaries
 
-[![Build Status](https://travis-ci.com/bpmn-io/camunda-transaction-boundaries.svg?branch=master)](https://travis-ci.com/bpmn-io/camunda-transaction-boundaries)
+[![CI](https://github.com/bpmn-io/camunda-transaction-boundaries/workflows/CI/badge.svg)](https://github.com/bpmn-io/camunda-transaction-boundaries/actions?query=workflow%3ACI)
+
 
 A bpmn-js extension to visualize transaction boundaries, applied by [Camunda](https://docs.camunda.org).
 
