@@ -8,25 +8,20 @@ import { forEach } from 'min-dash';
 
 import camundaModdleDescriptor from 'camunda-bpmn-moddle/resources/camunda';
 
+import diagramXML from './async-before-start.bpmn';
+
 
 describe('transaction-boundaries-async-before-start', function() {
 
-  var diagram = require('./async-before-start.bpmn');
 
   function withModeler(config, fn) {
 
-    return function(done) {
+    return function() {
 
       var modeler = new Modeler(config);
 
-      modeler.importXML(diagram, function(err) {
-        if (err) {
-          done(err);
-        }
-
+      return modeler.importXML(diagramXML).then(function() {
         modeler.invoke(fn);
-
-        done();
       });
 
     };
