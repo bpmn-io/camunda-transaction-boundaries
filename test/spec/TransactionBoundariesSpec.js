@@ -112,7 +112,7 @@ describe('transaction-boundaries', function() {
 
   describe('unit tests', function() {
 
-    it('get transaction boundary elements', inject(function(transactionBoundaries, elementRegistry) {
+    it('get transaction boundary elements', inject(function(transactionBoundaries) {
 
       // given
       var expectedBoundaries = {
@@ -140,6 +140,21 @@ describe('transaction-boundaries', function() {
         expect(boundaries).to.eql(element.boundaries);
       });
 
+    }));
+
+
+    it('should not crash on event definitions being an empty Array', inject(function(transactionBoundaries, elementRegistry) {
+
+      // given
+      var event = elementRegistry.get('StartEvent_1');
+
+      event.businessObject.get('eventDefinitions'); // manipulate property
+
+      // when
+      var transactionBoundaryElements = transactionBoundaries._getTransactionBoundaryElements();
+
+      // then
+      expect(transactionBoundaryElements).to.exist;
     }));
 
   });
