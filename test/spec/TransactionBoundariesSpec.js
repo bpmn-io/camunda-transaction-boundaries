@@ -15,14 +15,12 @@ describe('transaction-boundaries', function() {
 
   function withModeler(config, fn) {
 
-    return function() {
+    return async function() {
 
       var modeler = new Modeler(config);
 
-      return modeler.importXML(diagramXML).then(function() {
-        modeler.invoke(fn);
-      });
-
+      await modeler.importXML(diagramXML);
+      return modeler.invoke(fn);
     };
   }
 
