@@ -10,23 +10,18 @@ import camundaModdleDescriptor from 'camunda-bpmn-moddle/resources/camunda';
 
 import diagramXML from './async-after.bpmn';
 
-
 describe('transaction-boundaries-async-after', function() {
-
 
   function withModeler(config, fn) {
 
-    return function() {
+    return async function() {
 
       var modeler = new Modeler(config);
 
-      return modeler.importXML(diagramXML).then(function() {
-        modeler.invoke(fn);
-      });
-
+      await modeler.importXML(diagramXML);
+      return modeler.invoke(fn);
     };
   }
-
 
   function inject(fn) {
 
@@ -40,7 +35,6 @@ describe('transaction-boundaries-async-after', function() {
 
     return withModeler(config, fn);
   }
-
 
   describe('API', function() {
 
