@@ -30,8 +30,8 @@
   ],
   "license": "MIT",
   "devDependencies": {
-    "bpmn-js": "^8.2.0",
-    "camunda-bpmn-moddle": "^5.0.0",
+    "bpmn-js": "^8.10.0",
+    "camunda-bpmn-moddle": "^5.1.2",
     "chai": "^4.3.0",
     "eslint": "^7.20.0",
     "eslint-plugin-bpmn-io": "^0.12.0",
