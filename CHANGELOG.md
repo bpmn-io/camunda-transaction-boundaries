@@ -6,6 +6,8 @@ All notable changes to [camunda-transaction-boundaries](https://github.com/bpmn-
 
 ___Note:__ Yet to be released changes appear here._
 
+* `DEPS`: update to `min-dash@5.1.0`
+
 ## 1.1.2
 
 * `FIX`: handle empty event definitions ([`e9c630cc`](https://github.com/bpmn-io/camunda-transaction-boundaries/commit/e9c630ccbcea0623e2d6ba7177319de000654a66))

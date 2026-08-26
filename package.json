@@ -47,6 +47,6 @@
     "webpack": "^5.22.0"
   },
   "dependencies": {
-    "min-dash": "^3.5.2"
+    "min-dash": "^5.1.0"
   }
 }
