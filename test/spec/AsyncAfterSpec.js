@@ -1,5 +1,7 @@
 import '../TestHelper';
 
+import { expect } from 'chai';
+
 import Modeler from 'bpmn-js/lib/Modeler';
 
 import transactionBoundariesModule from '../..';
