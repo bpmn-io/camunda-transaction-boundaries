@@ -1,4 +1,4 @@
 test
-.eslintrc
+eslint.config.mjs
 .travis.yml
 karma.conf.js
