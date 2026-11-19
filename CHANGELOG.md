@@ -6,6 +6,8 @@ All notable changes to [camunda-transaction-boundaries](https://github.com/bpmn-
 
 ___Note:__ Yet to be released changes appear here._
 
+## 2.0.0
+
 * `FEAT`: style transaction boundary markers via `assets/transaction-boundaries.css` and the `@bpmn-io/theme` tokens ([#17](https://github.com/bpmn-io/camunda-transaction-boundaries/issues/17))
 * `DEPS`: update to `min-dash@5.1.0`
 
