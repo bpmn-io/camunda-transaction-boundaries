@@ -1,4 +1,4 @@
-import '../TestHelper';
+import { addStyle } from '../TestHelper';
 
 import { expect } from 'chai';
 
@@ -99,6 +99,117 @@ describe('transaction-boundaries', function() {
       // then
       expect(overlays.get({ type: 'transaction-boundaries' })).to.be.empty;
 
+    }));
+
+  });
+
+
+  describe('styling', function() {
+
+    var DEFAULT_MARKER_COLOR = 'rgb(0, 119, 204)';
+
+    var THEME_MARKER_COLOR = 'rgb(204, 102, 0)';
+
+    var CUSTOM_MARKER_COLOR = 'rgb(0, 153, 0)';
+
+    function getMarkers(overlays) {
+      return overlays.get({ type: 'transaction-boundaries' }).map(function(overlay) {
+        return overlay.htmlContainer.firstElementChild;
+      });
+    }
+
+    before(function() {
+      addStyle(
+        '.theme-test .bio-theme-parent, .theme-test.bio-theme-parent {' +
+        '  --bio-primary: ' + THEME_MARKER_COLOR + ';' +
+        '}' +
+        '.component-test .bio-theme-parent, .component-test.bio-theme-parent {' +
+        '  --transaction-boundary-background-color: ' + CUSTOM_MARKER_COLOR + ';' +
+        '}'
+      );
+    });
+
+    afterEach(function() {
+      document.body.classList.remove('theme-test', 'component-test');
+    });
+
+
+    it('should mark boundaries with a class', inject(function(transactionBoundaries, overlays) {
+
+      // when
+      transactionBoundaries.show();
+
+      // then
+      forEach(getMarkers(overlays), function(marker) {
+        expect(marker.classList.contains('transaction-boundary')).to.be.true;
+      });
+    }));
+
+
+    it('should scope theme variables to the boundaries', inject(function(transactionBoundaries, overlays) {
+
+      // when
+      transactionBoundaries.show();
+
+      // then
+      forEach(getMarkers(overlays), function(marker) {
+        expect(marker.classList.contains('bio-theme-parent')).to.be.true;
+      });
+    }));
+
+
+    it('should not color boundaries inline', inject(function(transactionBoundaries, overlays) {
+
+      // when
+      transactionBoundaries.show();
+
+      // then
+      forEach(getMarkers(overlays), function(marker) {
+        expect(marker.style.background).to.be.empty;
+        expect(marker.style.backgroundColor).to.be.empty;
+      });
+    }));
+
+
+    it('should color boundaries with the theme primary color by default', inject(function(transactionBoundaries, overlays) {
+
+      // when
+      transactionBoundaries.show();
+
+      // then
+      forEach(getMarkers(overlays), function(marker) {
+        expect(getComputedStyle(marker).backgroundColor).to.eql(DEFAULT_MARKER_COLOR);
+      });
+    }));
+
+
+    it('should follow a theme', inject(function(transactionBoundaries, overlays) {
+
+      // given
+      document.body.classList.add('theme-test');
+
+      // when
+      transactionBoundaries.show();
+
+      // then
+      forEach(getMarkers(overlays), function(marker) {
+        expect(getComputedStyle(marker).backgroundColor).to.eql(THEME_MARKER_COLOR);
+      });
+    }));
+
+
+    it('should allow overriding the boundary color', inject(function(transactionBoundaries, overlays) {
+
+      // given
+      document.body.classList.add('component-test');
+
+      // when
+      transactionBoundaries.show();
+
+      // then
+      forEach(getMarkers(overlays), function(marker) {
+        expect(getComputedStyle(marker).backgroundColor).to.eql(CUSTOM_MARKER_COLOR);
+      });
     }));
 
   });

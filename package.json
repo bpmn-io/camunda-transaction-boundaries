@@ -3,8 +3,9 @@
   "version": "1.1.2",
   "description": "Visualize Camunda transaction boundaries within a bpmn-js rendered diagram",
   "scripts": {
-    "all": "run-s lint test",
+    "all": "run-s lint lint:theme test",
     "lint": "eslint .",
+    "lint:theme": "bpmn-io-theme-validate assets/transaction-boundaries.css",
     "test": "karma start",
     "dev": "npm test -- --auto-watch --no-single-run"
   },
@@ -30,6 +31,7 @@
   ],
   "license": "MIT",
   "devDependencies": {
+    "@bpmn-io/theme": "^0.3.0",
     "bpmn-js": "^8.10.0",
     "camunda-bpmn-moddle": "^5.1.2",
     "chai": "^6.2.2",

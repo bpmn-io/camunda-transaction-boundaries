@@ -1,5 +1,6 @@
 var diagramCSS = require('bpmn-js/dist/assets/diagram-js.css');
 var bpmnCSS = require('bpmn-js/dist/assets/bpmn-font/css/bpmn-embedded.css');
+var transactionBoundariesCSS = require('../assets/transaction-boundaries.css');
 
 
 export function addStyle(styleText) {
@@ -17,5 +18,6 @@ export function addStyle(styleText) {
 // add initial style
 addStyle(diagramCSS);
 addStyle(bpmnCSS);
+addStyle(transactionBoundariesCSS);
 
 addStyle('html, body { height: 100%; padding: 0; margin: 0; }');

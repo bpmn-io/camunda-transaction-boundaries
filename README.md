@@ -39,6 +39,8 @@ import BpmnModeler from 'bpmn-js/lib/Modeler';
 
 import transactionBoundariesModule from 'camunda-transaction-boundaries';
 
+import 'camunda-transaction-boundaries/assets/transaction-boundaries.css';
+
 var canvas = $('#js-canvas');
 
 var bpmnModeler = new BpmnModeler({
@@ -61,6 +63,20 @@ bpmnModeler.importXML(xml, function(err) {
 ```
 
 Please see [this example](https://github.com/bpmn-io/bpmn-js-examples/tree/master/transaction-boundaries) for a more detailed instructions.
+
+
+## Styling
+
+The markers take their color from the `--bio-primary` token of [`@bpmn-io/theme`](https://github.com/bpmn-io/themes), so a bpmn.io theme restyles them together with the rest of the diagram.
+
+To give the markers a color of their own, override `--transaction-boundary-background-color` from your theme:
+
+```css
+.my-theme .bio-theme-parent,
+.my-theme.bio-theme-parent {
+  --transaction-boundary-background-color: hsl(150, 86%, 30%);
+}
+```
 
 
 ## Test
