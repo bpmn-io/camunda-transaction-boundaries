@@ -6,7 +6,13 @@ All notable changes to [camunda-transaction-boundaries](https://github.com/bpmn-
 
 ___Note:__ Yet to be released changes appear here._
 
+* `FEAT`: style transaction boundary markers via `assets/transaction-boundaries.css` and the `@bpmn-io/theme` tokens ([#17](https://github.com/bpmn-io/camunda-transaction-boundaries/issues/17))
 * `DEPS`: update to `min-dash@5.1.0`
+
+### Breaking Changes
+
+* Markers are no longer colored inline. Include `camunda-transaction-boundaries/assets/transaction-boundaries.css` to display them.
+* Markers are blue (`--bio-primary`) instead of red by default. Override `--transaction-boundary-background-color` to restore the previous look.
 
 ## 1.1.2
 

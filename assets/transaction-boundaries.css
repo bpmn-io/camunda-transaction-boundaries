@@ -1,0 +1,17 @@
+/**
+ * Semantic tokens, copied from `@bpmn-io/theme` to style the components
+ * according to this theme.
+ *
+ * Names and values of the tokens should stay intact with the `@bpmn-io/theme`
+ * source of truth, to ensure matching styles and allow overrides with an
+ * alternative theme.
+ */
+.bio-theme-parent {
+  --bio-primary: hsl(205, 100%, 40%);
+}
+
+.transaction-boundary {
+  --transaction-boundary-background-color: var(--bio-primary);
+
+  background-color: var(--transaction-boundary-background-color);
+}
